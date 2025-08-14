@@ -48,6 +48,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Dict, Tuple, List
 import math
+import colorsys
+import plotly.graph_objects as go
 
 # -----------------------------
 # Paint library (starter set)
@@ -566,9 +568,6 @@ def show_colors(color_dict):
     
     fig.show()
 
-import colorsys
-import math
-import plotly.graph_objects as go
 
 def _rgb_to_hsv(rgb):
     r, g, b = [v/255 for v in rgb]
